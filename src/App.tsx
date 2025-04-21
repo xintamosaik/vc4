@@ -1,10 +1,10 @@
 import { useState } from "react";
-import "./App.css";
+
 
 import Editor from "./Editor";
 import Preview from "./Preview";
 function App() {
-  const [view, setView] = useState("editor");
+  const [view, setView] = useState<"editor" | "preview">("editor");
 
   return (
     <>

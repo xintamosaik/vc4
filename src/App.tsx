@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-
 import Editor from "./Editor";
 import Preview from "./Preview";
 function App() {
@@ -9,20 +8,20 @@ function App() {
   return (
     <>
       {view === "editor" && (
-      <section>
-        <button type="button" onClick={() => setView("preview")}>
-          preview
-        </button>
-        <Editor />
-      </section>
+        <section>
+          <button type="button" onClick={() => setView("preview")}>
+            preview
+          </button>
+          <Editor />
+        </section>
       )}
       {view === "preview" && (
-      <section>
-        <button type="button" onClick={() => setView("editor")}>
-          editor
-        </button>
-        <Preview />
-      </section>
+        <section>
+          <button type="button" onClick={() => setView("editor")}>
+            editor
+          </button>
+          <Preview />
+        </section>
       )}
     </>
   );
